@@ -1,3 +1,12 @@
+# Goals for the project
+
+To learn
+
+1. Apply types to component props
+2. Apply types to component state
+3. Apply types to event handlers
+4. And some other areas
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
