@@ -82,6 +82,7 @@ const App = () => {
 
   const handleDecreaseWaterLevel = () => {
     setClickDecrease(true);
+    setClickIncrease(false);
   };
 
   return (
