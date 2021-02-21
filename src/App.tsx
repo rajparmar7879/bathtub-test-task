@@ -62,7 +62,7 @@ const App = () => {
   }, [clickIncrease]);
 
   useEffect(() => {
-    if (clickIncrease) {
+    if (clickDecrease) {
       const interval = setInterval(() => {
         setWaterLevel((waterLevel) => waterLevel - 1);
       }, 2000);
@@ -78,6 +78,7 @@ const App = () => {
 
   const handleIncreaseWaterLevel = () => {
     setClickIncrease(true);
+    setClickDecrease(false);
   };
 
   const handleDecreaseWaterLevel = () => {
@@ -93,7 +94,7 @@ const App = () => {
           <WaterLevel />
         ))}
       </Bathtub>
-      {true && waterLevel}
+      {true && <div>Water Level: {waterLevel}</div>}
       <ButtonContainer>
         {waterLevel === 0 && (
           <Button
